@@ -1,0 +1,64 @@
+**README - Number of Islands**
+
+## Overview
+
+This code is designed to calculate the number of islands in a given grid. In this context, an "island" is a group of connected '1's (land) in a 2D grid, where '0's represent water.
+
+## Usage
+
+1. Ensure you have a Python environment set up.
+
+2. Download the `number_of_islands.py` script.
+
+3. Import the `numIslands` function from the script into your own Python program.
+
+4. Create a 2D grid (a list of lists) where '1' represents land and '0' represents water. For example:
+
+    ```python
+    grid = [
+        [1, 1, 0, 0, 0],
+        [1, 1, 0, 0, 0],
+        [0, 0, 1, 0, 0],
+        [0, 0, 0, 1, 1]
+    ]
+    ```
+
+5. Call the `numIslands` function, passing your grid as an argument:
+
+    ```python
+    islands = numIslands(grid)
+    ```
+
+6. The function will return the number of islands in the grid.
+
+## Example
+
+Here is a complete example of how to use the `numIslands` function:
+
+```python
+from number_of_islands import numIslands
+
+grid = [
+    [1, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1]
+]
+
+islands = numIslands(grid)
+print("Number of islands:", islands)
+```
+
+This will output:
+
+```
+Number of islands: 3
+```
+
+## Note
+
+- The grid should be a valid 2D list with consistent dimensions (rectangular).
+- The `numIslands` function uses depth-first search (DFS) to identify connected land cells and count the islands.
+- This code does not modify the input grid; it only calculates the number of islands.
+
+Feel free to use this code in your projects to analyze and calculate the number of islands in 2D grids.
